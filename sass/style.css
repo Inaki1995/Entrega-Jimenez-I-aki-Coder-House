@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1200px) {
+  .containermerch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "head head" "mainmerch mainmerch" "mainmerch mainmerch" "footer footer";
+  }
+  .containermerch .headermerch {
+    height: 80%;
+  }
+  .mainmerch {
+    transform: translateY(6px);
+    grid-area: mainmerch;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "camiseta gorras" "cartas pelotas";
+  }
+  .mainmerch #remeras {
+    width: 100%;
+    height: 300px;
+  }
+  .mainmerch #pelotas {
+    width: 100%;
+    height: 300px;
+  }
+  .mainmerch #gorrasnfl {
+    width: 100%;
+    height: 300px;
+  }
+  .mainmerch #cartasnfl {
+    width: 100%;
+    height: 300px;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 99%;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
+  grid-template-areas: "head" "main" "footer";
+}
+.container header {
+  grid-area: head;
+  background: linear-gradient(red, blue);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Calibri", sans-serif;
+}
+.container header h1 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  align-self: end;
+}
+.container header img {
+  width: 30%;
+  height: 50%;
+  align-self: center;
+}
+.container header nav {
+  justify-content: flex-end;
+  width: 100%;
+  align-self: end;
+  gap: 20px;
+  font-size: 25px;
+}
+.container header nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 20px;
+}
+.container header nav ul li {
+  flex-direction: row;
+}
+.container header nav ul li a {
+  text-decoration: none;
+  color: white;
+  gap: 20px;
+}
+.container main {
+  transform: translateY(-100px);
+  grid-area: main;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Calibri", sans-serif;
+}
+.container main p {
+  font-size: 20px;
+  font-family: "Calibri", sans-serif;
+}
+.container main iframe {
+  display: block;
+  margin: auto;
+  transform: translateY(50px);
+}
+.container footer {
+  grid-area: footer;
+  background: linear-gradient(blue, red);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "Calibri", sans-serif;
+}/*# sourceMappingURL=style.css.map */

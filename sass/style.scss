@@ -1,0 +1,94 @@
+@import "./pages/contact.scss";
+@import "./pages/fixture.scss";
+@import "./pages/merchandising.scss";
+@import "./pages/teams.scss";
+
+
+.container {
+    display: grid;
+    grid-template-columns: 99%;
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-areas: "head" "main" "footer";
+
+    header {
+        grid-area: head;
+         background: linear-gradient(red,blue);
+         width: 100%;
+         height: 70%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         font-family: 'Calibri', sans-serif;
+
+         h1{
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-size: 40px;
+            align-self: end;
+        }
+        img {
+            width: 30%;
+            height: 50%;
+            align-self: center;
+        }
+        nav{
+            justify-content: flex-end;
+            width: 100%;
+            align-self: end;
+            gap: 20px;
+            font-size: 25px;
+           
+            ul {
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+                gap: 20px;
+               
+                li{
+                    flex-direction: row;
+                   
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        gap: 20px;
+                       
+                    }
+                   
+                }
+            }
+        }
+
+     }
+     main {
+        transform: translateY(-100px);
+         grid-area: main;
+         background-color: white;
+         display: flex;
+         flex-direction: column;
+         height:100%;
+         font-family: 'Calibri', sans-serif;
+         p{
+            font-size: 20px;
+            font-family: 'Calibri', sans-serif;
+         
+        }
+        iframe {
+            display: block;
+            margin: auto;
+            transform: translateY(50px);
+        }
+
+
+
+     }
+     footer {
+        grid-area: footer;
+        background: linear-gradient(blue,red);
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Calibri', sans-serif;
+    }
+}
