@@ -1,0 +1,21 @@
+//VARIABLES
+$bg-color: linear-gradient(red,blue);
+$headerwidth: 100%;
+$headerheight: 70%;
+
+
+
+// MAP y MAP-GET
+$estilosheader: (
+    background: $bg-color,
+    width: $headerwidth,
+    height: $headerheight,
+);
+
+//MIXINS
+@mixin sizes($fontsize, $letracolor) {
+    font-size: $fontsize;
+    color: $letracolor;
+}
+
+

@@ -53,8 +53,8 @@
 .container header h1 {
   text-align: center;
   width: 100%;
-  color: white;
   font-size: 40px;
+  color: white;
   align-self: end;
 }
 .container header img {
