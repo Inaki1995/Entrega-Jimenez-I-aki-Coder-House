@@ -1,1 +1,78 @@
 @import "../variables/variables";
+.logos {
+    width: 150px;
+    height: 150px;
+}
+.contactheader {
+    
+         background: $bg-color;
+         width: map-get($estilosheader, width);
+         height: map-get($estilosheader, height);
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         font-family: 'Calibri', sans-serif;
+
+         h1{
+            text-align: center;
+            width: 100%;
+            @include sizes(40px, white);
+            align-self: end;
+        }
+        img {
+            width: 30%;
+            height: 50%;
+            align-self: center;
+        }
+        nav{
+            justify-content: flex-end;
+            width: 99%;
+            align-self: end;
+            gap: 20px;
+            font-size: 25px;
+           
+            ul {
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+                gap: 20px;
+               
+                li{
+                    flex-direction: row;
+                   
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        gap: 20px;
+                       
+                    }
+                   
+                }
+            }
+        }
+
+     }
+
+.maincontact {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 50px;
+}
+.contactmain {
+    transform: translateY(100px);
+    height: 80%;
+}
+.contactfooter {
+    background: linear-gradient(blue,red);
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Calibri', sans-serif;
+        width: 99%;
+        height: 100%;
+        align-content: flex-end;
+        transform: translateY(130px);
+    
+}

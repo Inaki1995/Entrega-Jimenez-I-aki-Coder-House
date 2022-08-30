@@ -1,1 +1,72 @@
 @import "../variables/variables";
+
+    .fixtureheader {
+     background: $bg-color;
+     width: map-get($estilosheader, width);
+     height: map-get($estilosheader, height);
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     font-family: 'Calibri', sans-serif;
+
+     h1{
+        text-align: center;
+        width: 100%;
+        @include sizes(40px, white);
+        align-self: end;
+    }
+    img {
+        width: 30%;
+        height: 50%;
+        align-self: center;
+    }
+    nav{
+        justify-content: flex-end;
+        width: 100%;
+        align-self: end;
+        gap: 20px;
+        font-size: 25px;
+       
+        ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            gap: 20px;
+           
+            li{
+                flex-direction: row;
+               
+                a{
+                    text-decoration: none;
+                    color: white;
+                    gap: 20px;
+                   
+                }
+               
+            }
+        }
+    }
+
+ }
+#mainfixture {
+    transform: translateY(400px);
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    justify-content: center;
+    table{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        
+    }
+}
+.fixturefooter {
+    background: linear-gradient(blue,red);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Calibri', sans-serif;
+    transform: translateY(100px);
+}

@@ -290,4 +290,9 @@ footer {
         font-size: 15px;
         align-self: flex-end;
     }
+    /*FIXTURE Y TEAMS */
+
+    #mainfixture {
+        transform: translateY(400px);
+    }
 }

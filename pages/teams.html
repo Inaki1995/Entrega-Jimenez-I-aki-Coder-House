@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../sass/style.css">
     <title>NFL News - All the info, photos and videos about your favourites teams of the National Football League!</title>
     <meta name="description" content="Detailed Information aboout all the teams playing in the National Footbal League.">
     <meta name="keywords" content="NFL, National Football League, Football, America, Football News, Football Teams">
 </head>
 <body>
-    <header>
+    <header class="teamheader">
         <img src="../images/nfl_logo.png" alt="Principal Logo">
         <h1>TEAMS</h1>
         <nav>
@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="teammain">
 <table class="tabla" border="1">
             <tr>
                 <th>NFC Teams</th>
@@ -95,8 +95,10 @@
             </tr>
         </table>
     </main>
-    <footer>
-       <span>© 2022 NFL News LLC. NFL and the NFL shield design are registered trademarks of the National Football League.The team names, logos and uniform designs are registered trademarks of the teams indicated. All other NFL-related trademarks are trademarks of the National Football League. NFL footage © NFL News LLC.</span>
+    <footer class="teamfooter">
+     <div>
+        <p>© 2022 NFL News LLC. NFL and the NFL shield design are registered trademarks of the National Football League.The team names, logos and uniform designs are registered trademarks of the teams indicated. All other NFL-related trademarks are trademarks of the National Football League. NFL footage © NFL News LLC.</p>
+     </div>
     </footer>
 </body>
 </html>
