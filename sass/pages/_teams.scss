@@ -60,6 +60,22 @@
        transform: translateY(-300px);
        
    }
+   section {
+    transform: translateY(-350px);
+    margin-left: 10px;
+   }
+   #fantasy {
+    justify-self: center;
+   }
+   #fantasylogo {
+    width: 40%;
+    height: 40%;
+    transform: translateY(100px);
+    transform: translateX(-100px);
+    display: block;
+    margin: auto;
+    
+   }
 }
 .teamfooter {
    background: linear-gradient(blue,red);
