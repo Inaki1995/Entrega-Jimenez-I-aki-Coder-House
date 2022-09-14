@@ -1,0 +1,31 @@
+{
+  "name": "entrega_jimenez_inaki_coder_house",
+  "version": "1.0.0",
+  "description": "este es mi proyecto de entrega final realizado para coder house en el curso de desarrollo web y mi nombre es inaki jimenez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inaki1995/Entrega-Jimenez-I-aki-Coder-House.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "javascript",
+    "entrega_jimenez_inaki_coder_house"
+  ],
+  "author": "inaki jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inaki1995/Entrega-Jimenez-I-aki-Coder-House/issues"
+  },
+  "homepage": "https://github.com/Inaki1995/Entrega-Jimenez-I-aki-Coder-House#readme",
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
