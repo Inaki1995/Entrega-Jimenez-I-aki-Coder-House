@@ -1,88 +1,175 @@
 @import "../variables/variables";
-.teamheader {
-    background: $bg-color;
-    width: map-get($estilosheader, width);
-    height: map-get($estilosheader, height);
+//Mobile View
+@media only screen and (max-width: 1200px){
+.teamheader{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Calibri', sans-serif;
-
-    h1{
-       text-align: center;
-       width: 100%;
-       @include sizes(40px, white);
-       align-self: end;
-   }
-   img {
-       width: 30%;
-       height: 50%;
-       align-self: center;
-   }
-   nav{
-       justify-content: flex-end;
-       width: 100%;
-       align-self: end;
-       gap: 20px;
-       font-size: 25px;
-      
-       ul {
-           display: flex;
-           list-style: none;
-           text-decoration: none;
-           gap: 20px;
-          
-           li{
-               flex-direction: row;
-              
-               a{
-                   text-decoration: none;
-                   color: white;
-                   gap: 20px;
-                  
-               }
-              
-           }
-       }
-   }
-
-}
-#teammain {
-   transform: translateY(400px);
-   display: flex;
-   flex-direction: row;
-   width: 99%;
-   justify-content: center;
-   .tabla {
-       width: 100%;
-       height: 100%;
-       align-items: center;
-       transform: translateY(-300px);
-       
-   }
-   section {
-    transform: translateY(-350px);
-    margin-left: 10px;
-   }
-   #fantasy {
-    justify-self: center;
-   }
-   #fantasylogo {
-    width: 40%;
-    height: 40%;
-    transform: translateY(100px);
-    transform: translateX(-100px);
-    display: block;
-    margin: auto;
-    
-   }
-}
-.teamfooter {
-   background: linear-gradient(blue,red);
-   height: 100%;
-   color: white;
-   display: flex;
+   background: $bg-color;
    flex-direction: row;
    font-family: 'Calibri', sans-serif;
-   transform: translateY(200px); 
+   
+    h1{
+        text-align: center;
+        color: white;
+        align-self: center;
+    }
+    img{
+        width: 30%;
+        height:40%;
+        align-self: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5px;
+        ul{
+            list-style: none;
+            text-decoration: none;
+            flex-direction: row;
+            display: flex;
+            
+            justify-content: left;
+            gap: 3px;
+            transform: translateX(-150px);
+           
+           
+            li{
+                display: flex;
+                flex-direction: row;
+                align-items:flex-end;
+                transform: translateY(10px);
+                
+                a{
+                    color:white;
+                    text-decoration: none;
+                    flex-direction: row;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+#teammain{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    section{
+        article{
+            color: black;
+           font-size: 25px;
+            #fantasy{
+                #fantasylogo{
+                    width:100%;
+                    height:fit-content;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+
+    }    
+}
+.teamfooter{
+    display: flex;
+    flex-direction: row;
+    background: $bg-color;
+    color: white;
+}
+}
+
+
+
+
+// Desktop View
+@media only screen and (min-width: 1200px){
+    .teamheader {
+        background: $bg-color;
+        width: map-get($estilosheader, width);
+        height: map-get($estilosheader, height);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Calibri', sans-serif;
+    
+        h1{
+           text-align: center;
+           width: 100%;
+           @include sizes(40px, white);
+           align-self: end;
+       }
+       img {
+           width: 30%;
+           height: 50%;
+           align-self: center;
+       }
+       nav{
+           justify-content: flex-end;
+           width: 100%;
+           align-self: end;
+           gap: 20px;
+           font-size: 25px;
+          
+           ul {
+               display: flex;
+               list-style: none;
+               text-decoration: none;
+               gap: 20px;
+              
+               li{
+                   flex-direction: row;
+                  
+                   a{
+                       text-decoration: none;
+                       color: white;
+                       gap: 20px;
+                      
+                   }
+                  
+               }
+           }
+       }
+    
+    }
+    #teammain {
+       transform: translateY(400px);
+       display: flex;
+       flex-direction: row;
+       width: 99%;
+       justify-content: center;
+       .tabla {
+           width: 100%;
+           height: 100%;
+           align-items: center;
+           transform: translateY(-300px);
+           
+       }
+       section {
+        transform: translateY(-350px);
+        margin-left: 10px;
+       }
+       #fantasy {
+        justify-self: center;
+       }
+       #fantasylogo {
+        width: 40%;
+        height: 40%;
+        transform: translateY(100px);
+        transform: translateX(-100px);
+        display: block;
+        margin: auto;
+        
+       }
+    }
+    .teamfooter {
+       background: linear-gradient(blue,red);
+       height: 100%;
+       color: white;
+       display: flex;
+       flex-direction: row;
+       font-family: 'Calibri', sans-serif;
+       transform: translateY(200px); 
+    }
 }

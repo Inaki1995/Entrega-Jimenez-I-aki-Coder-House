@@ -1,5 +1,78 @@
 @import "../variables/variables";
+//Mobile View
 
+@media only screen and (max-width: 1200px){
+
+.headermerch{
+    display: flex;
+   background: $bg-color;
+   flex-direction: row;
+   font-family: 'Calibri', sans-serif;
+   
+    h1{
+        text-align: center;
+        color: white;
+        align-self: center;
+    }
+    img{
+        width: 30%;
+        height:40%;
+        align-self: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5px;
+        ul{
+            list-style: none;
+            text-decoration: none;
+            flex-direction: row;
+            display: flex;
+            
+            justify-content: left;
+            gap: 5px;
+            transform: translateX(-240px);
+           
+           
+            li{
+                display: flex;
+                flex-direction: row;
+                align-items:flex-end;
+                transform: translateY(10px);
+                
+                a{
+                    color:white;
+                    text-decoration: none;
+                    flex-direction: row;
+                    
+                }
+            }
+        }
+    }
+}
+.mainmerch{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+        align-items: center;
+        transform: translatX(50px);
+        margin-top: 25px;
+        margin-left:100px;
+        .col{
+            width: 100%;
+        }
+}
+.footermerch{
+    display: flex;
+    flex-direction: row;
+    background: $bg-color;
+    color: white;
+}
+
+}
+
+//Desktop View
 @media only screen and (min-width: 1200px) {
     .containermerch {
         display: grid;
@@ -112,7 +185,7 @@
                 .footermerch {
                                 grid-area: footer;
                                 background: linear-gradient(blue,red);
-                                height: 20%;
+                                height: 90%;
                                 color: white;
                                 display: flex;
                                 flex-direction: row;

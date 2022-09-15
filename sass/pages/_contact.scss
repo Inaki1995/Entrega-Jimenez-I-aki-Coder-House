@@ -1,78 +1,164 @@
 @import "../variables/variables";
-.logos {
-    width: 150px;
-    height: 150px;
-}
-.contactheader {
-    
-         background: $bg-color;
-         width: map-get($estilosheader, width);
-         height: map-get($estilosheader, height);
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         font-family: 'Calibri', sans-serif;
+//Mobile Visual
 
-         h1{
-            text-align: center;
-            width: 100%;
-            @include sizes(40px, white);
-            align-self: end;
-        }
-        img {
-            width: 30%;
-            height: 50%;
-            align-self: center;
-        }
-        nav{
-            justify-content: flex-end;
-            width: 99%;
-            align-self: end;
-            gap: 20px;
-            font-size: 25px;
+@media only screen and (max-width: 1200px){
+.contactheader{
+    display: flex;
+   background: $bg-color;
+   flex-direction: row;
+   font-family: 'Calibri', sans-serif;
+   
+    h1{
+        text-align: center;
+        color: white;
+        align-self: center;
+    }
+    img{
+        width: 30%;
+        height:40%;
+        align-self: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5px;
+        ul{
+            list-style: none;
+            text-decoration: none;
+            flex-direction: row;
+            display: flex;
+            
+            justify-content: left;
+            gap: 5px;
+            transform: translateX(-150px);
            
-            ul {
+           
+            li{
                 display: flex;
-                list-style: none;
-                text-decoration: none;
-                gap: 20px;
-               
-                li{
+                flex-direction: row;
+                align-items:flex-end;
+                transform: translateY(10px);
+                
+                a{
+                    color:white;
+                    text-decoration: none;
                     flex-direction: row;
-                   
-                    a{
-                        text-decoration: none;
-                        color: white;
-                        gap: 20px;
-                       
-                    }
-                   
+                    
                 }
             }
         }
-
-     }
-
-.maincontact {
+    }
+}
+.contactmain{
+    width: 90%;
+    margin-left: 20px;
+    transform: translateY(50px);
+    .maincontact{
+        display:flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        margin-top: 50px;
+        .logos{
+            width: 40%;
+            height: 30%;
+            
+            margin:auto;
+            display: block;
+        }
+    }
+        
+}
+.contactfooter{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    margin-top: 50px;
+    background: $bg-color;
+    color: white;
+    transform: translateY(300px);
 }
-.contactmain {
-    transform: translateY(100px);
-    height: 80%;
 }
-.contactfooter {
-    background: linear-gradient(blue,red);
-        height: 100%;
-        color: white;
+
+//Desktop Visual
+@media only screen and (min-width: 1200px){
+    .logos {
+        width: 150px;
+        height: 150px;
+    }
+    .contactheader {
+        
+             background: $bg-color;
+             width: map-get($estilosheader, width);
+             height: map-get($estilosheader, height);
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             font-family: 'Calibri', sans-serif;
+    
+             h1{
+                text-align: center;
+                width: 100%;
+                @include sizes(40px, white);
+                align-self: end;
+            }
+            img {
+                width: 30%;
+                height: 50%;
+                align-self: center;
+            }
+            nav{
+                justify-content: flex-end;
+                width: 99%;
+                align-self: end;
+                gap: 20px;
+                font-size: 25px;
+               
+                ul {
+                    display: flex;
+                    list-style: none;
+                    text-decoration: none;
+                    gap: 20px;
+                   
+                    li{
+                        flex-direction: row;
+                       
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            gap: 20px;
+                           
+                        }
+                       
+                    }
+                }
+            }
+    
+         }
+    
+    .maincontact {
         display: flex;
         flex-direction: row;
-        font-family: 'Calibri', sans-serif;
-        width: 99%;
-        height: 100%;
-        align-content: flex-end;
-        transform: translateY(130px);
-    
+        justify-content:space-around;
+        margin-top: 50px;
+    }
+    .contactmain {
+        transform: translateY(100px);
+        height: 80%;
+    }
+    .contactfooter {
+        background: linear-gradient(blue,red);
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Calibri', sans-serif;
+            width: 99%;
+            height: 100%;
+            align-content: flex-end;
+            transform: translateY(130px);
+        
+    }
 }

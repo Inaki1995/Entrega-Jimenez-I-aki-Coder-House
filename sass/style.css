@@ -1,153 +1,347 @@
-.logos {
-  width: 150px;
-  height: 150px;
+@media only screen and (max-width: 1200px) {
+  .contactheader {
+    display: flex;
+    background: linear-gradient(red, blue);
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+  }
+  .contactheader h1 {
+    text-align: center;
+    color: white;
+    align-self: center;
+  }
+  .contactheader img {
+    width: 30%;
+    height: 40%;
+    align-self: center;
+  }
+  .contactheader nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .contactheader nav ul {
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    transform: translateX(-150px);
+  }
+  .contactheader nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    transform: translateY(10px);
+  }
+  .contactheader nav ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+  }
+  .contactmain {
+    width: 90%;
+    margin-left: 20px;
+    transform: translateY(50px);
+  }
+  .contactmain .maincontact {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+  }
+  .contactmain .maincontact .logos {
+    width: 40%;
+    height: 30%;
+    margin: auto;
+    display: block;
+  }
+  .contactfooter {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(red, blue);
+    color: white;
+    transform: translateY(300px);
+  }
 }
-
-.contactheader {
-  background: linear-gradient(red, blue);
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: "Calibri", sans-serif;
+@media only screen and (min-width: 1200px) {
+  .logos {
+    width: 150px;
+    height: 150px;
+  }
+  .contactheader {
+    background: linear-gradient(red, blue);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Calibri", sans-serif;
+  }
+  .contactheader h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    align-self: end;
+  }
+  .contactheader img {
+    width: 30%;
+    height: 50%;
+    align-self: center;
+  }
+  .contactheader nav {
+    justify-content: flex-end;
+    width: 99%;
+    align-self: end;
+    gap: 20px;
+    font-size: 25px;
+  }
+  .contactheader nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+  }
+  .contactheader nav ul li {
+    flex-direction: row;
+  }
+  .contactheader nav ul li a {
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+  }
+  .maincontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .contactmain {
+    transform: translateY(100px);
+    height: 80%;
+  }
+  .contactfooter {
+    background: linear-gradient(blue, red);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+    width: 99%;
+    height: 100%;
+    align-content: flex-end;
+    transform: translateY(130px);
+  }
 }
-.contactheader h1 {
-  text-align: center;
-  width: 100%;
-  font-size: 40px;
-  color: white;
-  align-self: end;
-}
-.contactheader img {
-  width: 30%;
-  height: 50%;
-  align-self: center;
-}
-.contactheader nav {
-  justify-content: flex-end;
-  width: 99%;
-  align-self: end;
-  gap: 20px;
-  font-size: 25px;
-}
-.contactheader nav ul {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  gap: 20px;
-}
-.contactheader nav ul li {
-  flex-direction: row;
-}
-.contactheader nav ul li a {
-  text-decoration: none;
-  color: white;
-  gap: 20px;
-}
-
-.maincontact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.contactmain {
-  transform: translateY(100px);
-  height: 80%;
-}
-
-.contactfooter {
-  background: linear-gradient(blue, red);
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  font-family: "Calibri", sans-serif;
-  width: 99%;
-  height: 100%;
-  align-content: flex-end;
-  transform: translateY(130px);
-}
-
 .fixtureheader {
-  background: linear-gradient(red, blue);
-  width: 100%;
-  height: 70%;
   display: flex;
+  background: linear-gradient(red, blue);
   flex-direction: row;
-  justify-content: space-between;
   font-family: "Calibri", sans-serif;
 }
 .fixtureheader h1 {
   text-align: center;
-  width: 100%;
-  font-size: 40px;
   color: white;
-  align-self: end;
+  align-self: center;
 }
 .fixtureheader img {
   width: 30%;
-  height: 50%;
+  height: 40%;
   align-self: center;
 }
 .fixtureheader nav {
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  align-self: end;
-  gap: 20px;
-  font-size: 25px;
+  margin-top: 3px;
 }
 .fixtureheader nav ul {
-  display: flex;
   list-style: none;
   text-decoration: none;
-  gap: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  transform: translateX(-160px);
 }
 .fixtureheader nav ul li {
+  display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  transform: translateY(10px);
 }
 .fixtureheader nav ul li a {
-  text-decoration: none;
   color: white;
-  gap: 20px;
+  text-decoration: none;
+  flex-direction: row;
 }
 
 .mainfixture {
   display: flex;
   flex-direction: column;
-  width: 99%;
-  justify-content: center;
-  transform: translateY(50px);
+  transform: translateY(40px);
 }
-.mainfixture .table {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  justify-content: center;
-}
-.mainfixture article {
-  flex-direction: row;
-}
-.mainfixture article h2 {
+.mainfixture section article h2 {
   text-align: center;
 }
-.mainfixture article #ticketlogo {
+.mainfixture section article a img {
   display: block;
   margin: auto;
 }
 
 .fixturefooter {
-  background: linear-gradient(blue, red);
-  height: 100%;
-  color: white;
   display: flex;
   flex-direction: row;
-  font-family: "Calibri", sans-serif;
-  transform: translateY(100px);
+  background: linear-gradient(red, blue);
+  color: white;
+  transform: translateY(140px);
 }
 
+@media only screen and (min-width: 1200px) {
+  .fixtureheader {
+    background: linear-gradient(red, blue);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Calibri", sans-serif;
+  }
+  .fixtureheader h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    align-self: end;
+  }
+  .fixtureheader img {
+    width: 30%;
+    height: 50%;
+    align-self: center;
+  }
+  .fixtureheader nav {
+    justify-content: flex-end;
+    width: 100%;
+    align-self: end;
+    gap: 20px;
+    font-size: 25px;
+  }
+  .fixtureheader nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+  }
+  .fixtureheader nav ul li {
+    flex-direction: row;
+  }
+  .fixtureheader nav ul li a {
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+  }
+  .mainfixture {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    justify-content: center;
+    transform: translateY(50px);
+  }
+  .mainfixture .table {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .mainfixture article {
+    flex-direction: row;
+  }
+  .mainfixture article h2 {
+    text-align: center;
+  }
+  .mainfixture article #ticketlogo {
+    display: block;
+    margin: auto;
+  }
+  .fixturefooter {
+    background: linear-gradient(blue, red);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+    transform: translateY(100px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .headermerch {
+    display: flex;
+    background: linear-gradient(red, blue);
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+  }
+  .headermerch h1 {
+    text-align: center;
+    color: white;
+    align-self: center;
+  }
+  .headermerch img {
+    width: 30%;
+    height: 40%;
+    align-self: center;
+  }
+  .headermerch nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .headermerch nav ul {
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    transform: translateX(-240px);
+  }
+  .headermerch nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    transform: translateY(10px);
+  }
+  .headermerch nav ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+  }
+  .mainmerch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translatX(50px);
+    margin-top: 25px;
+    margin-left: 100px;
+  }
+  .mainmerch .col {
+    width: 100%;
+  }
+  .footermerch {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(red, blue);
+    color: white;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .containermerch {
     display: grid;
@@ -240,7 +434,7 @@
   .footermerch {
     grid-area: footer;
     background: linear-gradient(blue, red);
-    height: 20%;
+    height: 90%;
     color: white;
     display: flex;
     flex-direction: row;
@@ -248,161 +442,294 @@
     transform: translateY(400px);
   }
 }
-.teamheader {
-  background: linear-gradient(red, blue);
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: "Calibri", sans-serif;
+@media only screen and (max-width: 1200px) {
+  .teamheader {
+    display: flex;
+    background: linear-gradient(red, blue);
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+  }
+  .teamheader h1 {
+    text-align: center;
+    color: white;
+    align-self: center;
+  }
+  .teamheader img {
+    width: 30%;
+    height: 40%;
+    align-self: center;
+  }
+  .teamheader nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .teamheader nav ul {
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    gap: 3px;
+    transform: translateX(-150px);
+  }
+  .teamheader nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    transform: translateY(10px);
+  }
+  .teamheader nav ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+  }
+  #teammain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #teammain section article {
+    color: black;
+    font-size: 25px;
+  }
+  #teammain section article #fantasy #fantasylogo {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: block;
+    margin: auto;
+  }
+  .teamfooter {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(red, blue);
+    color: white;
+  }
 }
-.teamheader h1 {
-  text-align: center;
-  width: 100%;
-  font-size: 40px;
-  color: white;
-  align-self: end;
+@media only screen and (min-width: 1200px) {
+  .teamheader {
+    background: linear-gradient(red, blue);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Calibri", sans-serif;
+  }
+  .teamheader h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    align-self: end;
+  }
+  .teamheader img {
+    width: 30%;
+    height: 50%;
+    align-self: center;
+  }
+  .teamheader nav {
+    justify-content: flex-end;
+    width: 100%;
+    align-self: end;
+    gap: 20px;
+    font-size: 25px;
+  }
+  .teamheader nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+  }
+  .teamheader nav ul li {
+    flex-direction: row;
+  }
+  .teamheader nav ul li a {
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+  }
+  #teammain {
+    transform: translateY(400px);
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    justify-content: center;
+  }
+  #teammain .tabla {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    transform: translateY(-300px);
+  }
+  #teammain section {
+    transform: translateY(-350px);
+    margin-left: 10px;
+  }
+  #teammain #fantasy {
+    justify-self: center;
+  }
+  #teammain #fantasylogo {
+    width: 40%;
+    height: 40%;
+    transform: translateY(100px);
+    transform: translateX(-100px);
+    display: block;
+    margin: auto;
+  }
+  .teamfooter {
+    background: linear-gradient(blue, red);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+    transform: translateY(200px);
+  }
 }
-.teamheader img {
-  width: 30%;
-  height: 50%;
-  align-self: center;
+@media only screen and (max-width: 1200px) {
+  header {
+    display: flex;
+    background: linear-gradient(red, blue);
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+  }
+  header h1 {
+    text-align: center;
+    color: white;
+    align-self: center;
+  }
+  header img {
+    width: 30%;
+    height: 40%;
+    align-self: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+  }
+  header nav ul {
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    transform: translateX(-130px);
+  }
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    transform: translateY(10px);
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+  }
+  main {
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  main iframe {
+    display: block;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(red, blue);
+    color: white;
+  }
 }
-.teamheader nav {
-  justify-content: flex-end;
-  width: 100%;
-  align-self: end;
-  gap: 20px;
-  font-size: 25px;
-}
-.teamheader nav ul {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  gap: 20px;
-}
-.teamheader nav ul li {
-  flex-direction: row;
-}
-.teamheader nav ul li a {
-  text-decoration: none;
-  color: white;
-  gap: 20px;
-}
-
-#teammain {
-  transform: translateY(400px);
-  display: flex;
-  flex-direction: row;
-  width: 99%;
-  justify-content: center;
-}
-#teammain .tabla {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  transform: translateY(-300px);
-}
-#teammain section {
-  transform: translateY(-350px);
-  margin-left: 10px;
-}
-#teammain #fantasy {
-  justify-self: center;
-}
-#teammain #fantasylogo {
-  width: 40%;
-  height: 40%;
-  transform: translateY(100px);
-  transform: translateX(-100px);
-  display: block;
-  margin: auto;
-}
-
-.teamfooter {
-  background: linear-gradient(blue, red);
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  font-family: "Calibri", sans-serif;
-  transform: translateY(200px);
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 99%;
-  grid-template-rows: 1fr 1.5fr 0.5fr;
-  grid-template-areas: "head" "main" "footer";
-}
-.container header {
-  grid-area: head;
-  background: linear-gradient(red, blue);
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: "Calibri", sans-serif;
-}
-.container header h1 {
-  text-align: center;
-  width: 100%;
-  font-size: 40px;
-  color: white;
-  align-self: end;
-}
-.container header img {
-  width: 30%;
-  height: 50%;
-  align-self: center;
-}
-.container header nav {
-  justify-content: flex-end;
-  width: 100%;
-  align-self: end;
-  gap: 20px;
-  font-size: 25px;
-}
-.container header nav ul {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  gap: 20px;
-}
-.container header nav ul li {
-  flex-direction: row;
-}
-.container header nav ul li a {
-  text-decoration: none;
-  color: white;
-  gap: 20px;
-}
-.container main {
-  transform: translateY(-100px);
-  grid-area: main;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-family: "Calibri", sans-serif;
-}
-.container main p {
-  font-size: 20px;
-  font-family: "Calibri", sans-serif;
-}
-.container main iframe {
-  display: block;
-  margin: auto;
-  transform: translateY(-10px);
-}
-.container footer {
-  grid-area: footer;
-  background: linear-gradient(blue, red);
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  font-family: "Calibri", sans-serif;
+@media only screen and (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 99%;
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-areas: "head" "main" "footer";
+  }
+  .container header {
+    grid-area: head;
+    background: linear-gradient(red, blue);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Calibri", sans-serif;
+  }
+  .container header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    align-self: end;
+  }
+  .container header img {
+    width: 30%;
+    height: 50%;
+    align-self: center;
+  }
+  .container header nav {
+    justify-content: flex-end;
+    width: 100%;
+    align-self: end;
+    gap: 20px;
+    font-size: 25px;
+  }
+  .container header nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+  }
+  .container header nav ul li {
+    flex-direction: row;
+  }
+  .container header nav ul li a {
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+  }
+  .container main {
+    transform: translateY(-100px);
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Calibri", sans-serif;
+  }
+  .container main p {
+    font-size: 20px;
+    font-family: "Calibri", sans-serif;
+  }
+  .container main iframe {
+    display: block;
+    margin: auto;
+    transform: translateY(-10px);
+  }
+  .container footer {
+    grid-area: footer;
+    background: linear-gradient(blue, red);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+  }
 }/*# sourceMappingURL=style.css.map */
