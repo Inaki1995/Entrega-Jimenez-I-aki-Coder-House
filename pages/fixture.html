@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/style.css">
     <title>NFL News - Here you will find all the info about the 2022/2023 National Football League Fixture, and all the time and place of your favorite games!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="/images/favicon-16x16.png"/>
     <meta name="description" content="All the information about the 2022/2023 National Football League season games.">
     <meta name="keywords" content="NFL, National Football League, Football, America, Football News, Football Teams, Fixture, NFL Games, American Football games">
 </head>
 <body>
     <header class="fixtureheader">
-        <img src="../images/nfl_logo.png" alt="Principal Logo">
+        <!-- <img src="../images/nfl_logo.png" alt="Principal Logo">
         <h1>FIXTURE</h1>
         <nav>
             <ul>
@@ -21,10 +23,28 @@
                 <li> <a href="merchandising.html">Merchandising</a></li>
                 <li> <a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg" style="background: linear-gradient(red,blue);">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="../index.html">Fixture
+                <img src="../images/nfl_logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler text-white bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link text-light" href="teams.html">Teams</a>
+                  <a class="nav-link text-light" href="merchandising.html">Merchandising</a>
+                  <a class="nav-link text-light" href="contact.html" >Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main class="mainfixture">
-        <table class="tabla" border="1">
+        <table class="tabla table table-hover" border="1">
             <tr>
                 <th>Week 1</th>
                 <th>Time and Place</th>
@@ -108,5 +128,6 @@
             <p>© 2022 NFL News LLC. NFL and the NFL shield design are registered trademarks of the National Football League.The team names, logos and uniform designs are registered trademarks of the teams indicated. All other NFL-related trademarks are trademarks of the National Football League. NFL footage © NFL News LLC.</p>
          </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

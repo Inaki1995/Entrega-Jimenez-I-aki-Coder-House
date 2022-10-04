@@ -1,8 +1,11 @@
 @import "../variables/variables";
 //Mobile Visual
+body {
+    overflow-x: hidden;
+}
 
 @media only screen and (max-width: 1200px){
-.contactheader{
+/*.contactheader{
     display: flex;
    background: $bg-color;
    flex-direction: row;
@@ -49,7 +52,7 @@
             }
         }
     }
-}
+}*/
 .contactmain{
     width: 90%;
     margin-left: 20px;

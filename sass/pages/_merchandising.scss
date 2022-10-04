@@ -1,13 +1,19 @@
 @import "../variables/variables";
+body {
+    overflow-x: hidden;
+}
+
 //Mobile View
 
 @media only screen and (max-width: 1200px){
 
-.headermerch{
+/*.headermerch{
     display: flex;
    background: $bg-color;
    flex-direction: row;
    font-family: 'Calibri', sans-serif;
+   width: 100%;
+   
    
     h1{
         text-align: center;
@@ -24,6 +30,8 @@
         flex-direction: row;
         width: 100%;
         margin-top: 5px;
+        background: $bg-color!important;
+        color: white!important;
         ul{
             list-style: none;
             text-decoration: none;
@@ -50,15 +58,14 @@
             }
         }
     }
-}
+}*/
 .mainmerch{
     display:flex;
     flex-direction:row;
-    justify-content: center;
-        align-items: center;
-        transform: translatX(50px);
+    justify-items: center;
+        align-self: center;
         margin-top: 25px;
-        margin-left:100px;
+        margin-left: 40px;
         .col{
             width: 100%;
         }
@@ -75,16 +82,12 @@
 //Desktop View
 @media only screen and (min-width: 1200px) {
     .containermerch {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "head head"
-                             "mainmerch mainmerch"
-                             "mainmerch mainmerch"
-                             "footer footer";
+        display: flex;
+        flex-direction: column;
+        
         
         .headermerch {
-                                grid-area: head;
+                                
                                  background: $bg-color;
                                  width: map-get($estilosheader, width);
                                  height: map-get($estilosheader, height);
@@ -133,10 +136,10 @@
                         
                              }
 
-                             .mainmerch{
-                                transform: translateY(-100px);
+             .mainmerch{
+                                transform: translateY(-50px);
                                 transform: translateX(500px);
-                                grid-area: mainmerch;
+                                margin-top: 30px;
                                 height: 100%;
                                 display: grid;
                                 grid-template-columns: 50% 50%;
@@ -171,15 +174,25 @@
                                 
                             }
              
-            
-                #nflshoplogo {
+            .logoshop {
+                display: flex;
+                flex-direction: column;
+                transform: translateY(200px);
+                #nflshop{
+                
+                align-self: center;
+                
+                    #nflshoplogo {
                     float: left;
                   align-self:flex-start;
-                  transform: translateY(-350px);
+                  margin: auto;
+                  display: block;
+                  
                   
                   
                   
                 }
+            }
                                  
              }
                 .footermerch {
@@ -193,4 +206,4 @@
                                 transform: translateY(400px);
                             }
      }
-    
+    }

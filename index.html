@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/style.css">
     <title>NFL News - The Home Page of  American Football! You can find every single news right here!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="./images/favicon-16x16.png"/>
     <meta name="description" content="The official source for NFL News, NFL video highlights, Fantasy Football, game-day coverage, NFL schedules, stats, scores & more.">
     <meta name="keywords" content="NFL, National Football League, Football, America, Football News, Football Teams">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="./images/nfl_logo.png" alt="Principal Logo">
+            <!-- <img src="./images/nfl_logo.png" alt="Principal Logo">
             <h1>NFL NEWS</h1>
             <nav>
                 <ul>
@@ -22,7 +24,25 @@
                     <li> <a href="./pages/merchandising.html">Merchandising</a></li>
                     <li> <a href="pages/contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg" style="background: linear-gradient(red,blue);">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-light" href="index.html">Home
+                    <img src="./images/nfl_logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  </a>
+                  <button class="navbar-toggler text-white bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active text-light" aria-current="page" href="./pages/fixture.html">Fixture</a>
+                      <a class="nav-link text-light" href="./pages/teams.html">Teams</a>
+                      <a class="nav-link text-light" href="./pages/merchandising.html">Merchandising</a>
+                      <a class="nav-link text-light" href="./pages/contact.html" >Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
             <P>The National Football League (NFL) is a professional American football league that consists of 32 teams, divided equally between the American Football Conference (AFC) and the National Football Conference (NFC).<br>
@@ -36,7 +56,7 @@
         <section>
             <article>
                 <h2>NFL Rank 2022: Predicting the top 100 players, with stats, notes and quotes for the league's best</h2>
-                <p>The 2022 NFL season kicks off Thursday, Sept. 8, and that means it's time for our annual ranking of the league's top 100 players. What can we expect from the game's best this season, and how do they stack up against each other?<br>
+                <p class="texto2">The 2022 NFL season kicks off Thursday, Sept. 8, and that means it's time for our annual ranking of the league's top 100 players. What can we expect from the game's best this season, and how do they stack up against each other?<br>
 
                     To create our list, we asked an ESPN panel of more than 50 NFL experts to rate players based on how good they will be in the 2022 season compared with their peers. Emphasis was placed solely on expectations for the upcoming season and predicting potential greatness, rather than past performance, career résumé or positional value. That means long-term injuries and suspensions played a part. From those ratings, we were able to rank the best of the best, one to 100.<br>
                     
@@ -56,6 +76,6 @@
     </div>
     
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
